@@ -6,8 +6,6 @@
 var isAnagram = function(s, t) {
     const sn=s.split('').sort().join('')
     const tn=t.split('').sort().join('')
-    console.log(s)
-    console.log(t)
     if(sn===tn){
         return true
     }else{
