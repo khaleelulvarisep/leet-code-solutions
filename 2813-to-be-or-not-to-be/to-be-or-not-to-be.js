@@ -2,24 +2,26 @@
  * @param {string} val
  * @return {Object}
  */
-function expect(value) {
-  return {
-    toBe: function(compareValue) {
-      if (value === compareValue) {
-        return true;
-      } else {
-        throw new Error("Not Equal");
-      }
-    },
-    notToBe: function(compareValue) {
-      if (value !== compareValue) {
-        return true;
-      } else {
-        throw new Error("Equal");
-      }
+function expect(val){
+    return {
+        toBe:function(compareVal){
+            if(compareVal===val){
+                return true
+            }else{
+                throw new Error("Not Equal")
+            }
+        },
+        notToBe:function(compareVal){
+            if(compareVal!==val)
+            {
+                return true
+            }else{
+                throw new Error('Equal')
+            }
+        }
+        }
     }
-  };
-}
+
 
 
 /**
