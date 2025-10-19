@@ -3,12 +3,12 @@
  * @param {string} t
  * @return {boolean}
  */
-var isAnagram = function(s, t) {
-    const sn=s.split('').sort().join('')
-    const tn=t.split('').sort().join('')
-    if(sn===tn){
-        return true
-    }else{
-        return false
-    }
-};
+var isAnagram=(s,t)=>{
+   let newS=s.split('').sort().join('')
+   let newT=t.split('').sort().join('')
+   if(newS===newT){
+    return true
+   }else{
+     return false
+   }
+}
