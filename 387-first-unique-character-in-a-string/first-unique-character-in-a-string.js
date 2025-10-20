@@ -3,14 +3,15 @@
  * @return {number}
  */
 function firstUniqChar(s) {
-    const charCount = {};
-    for (let char of s) {
-        charCount[char] = (charCount[char] || 0) + 1;
+  let freq={}
+  for(let char of s){
+    freq[char]=(freq[char]||0)+1
+  }
+  for(let i=0;i<s.length;i++){
+    if(freq[s[i]]===1){
+        return i
     }
-    for (let i = 0; i < s.length; i++) {
-        if (charCount[s[i]] === 1) {
-            return i;
-        }
-    }
-    return -1;
+  }
+  return -1
+ 
 }
