@@ -1,9 +1,9 @@
 class Solution:
     def findDegrees(self, matrix: list[list[int]]) -> list[int]:
-        result=[]
+        c=[]
         for i in range(len(matrix)):
-            result.append(sum(matrix[i]))
-        return result    
+            c.append(sum(matrix[i]))
+        return c    
 
     
 
