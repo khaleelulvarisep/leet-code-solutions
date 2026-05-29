@@ -1,11 +1,11 @@
 class Solution:
     def findDegrees(self, matrix: list[list[int]]) -> list[int]:
-        c=[]
+        result=[]
         for i in range(len(matrix)):
-            c.append(sum(matrix[i]))
+            result.append(sum(matrix[i]))
 
         
-        return c    
+        return result    
 
     
 
