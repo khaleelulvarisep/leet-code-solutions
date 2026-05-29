@@ -3,6 +3,8 @@ class Solution:
         c=[]
         for i in range(len(matrix)):
             c.append(sum(matrix[i]))
+
+        
         return c    
 
     
