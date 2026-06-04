@@ -3,7 +3,13 @@ class Solution:
         write = 0
 
         for num in nums:
-            if write < k or nums[write - k] != num:
+            # allow first k elements always
+            if write < k:
+                nums[write] = num
+                write += 1
+
+            # after k elements, check last k element condition
+            elif nums[write - k] != num:
                 nums[write] = num
                 write += 1
 
