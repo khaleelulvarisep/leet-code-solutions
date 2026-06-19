@@ -1,8 +1,7 @@
 class Solution:
     def largestEven(self, s: str) -> str:
        
-        # if s[len(s)-1]=='2':
-        #     return s
+        
         if '2' not in s:
             return ''    
            
