@@ -3,8 +3,9 @@ class Solution:
         
         cap=caption.strip()
         result='#'
+        
         if cap:
-            
+
             result+=cap[0].lower()
  
         flag=False
