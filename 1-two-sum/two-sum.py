@@ -3,10 +3,10 @@ class Solution:
         
         seen={}
 
-        for i,num in enumerate(nums):
-            complement=target-num
+        for i in range(len(nums)):
+            complement=target-nums[i]
 
             if complement in seen:
                 return [seen[complement],i]
 
-            seen[num]=i
+            seen[nums[i]]=i
